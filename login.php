@@ -16,7 +16,7 @@
     <label for="exampleInputPassword1">Password</label>
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
   </div>
-  <button type="submit" class="btn btn-primary mt-4 mb-4" style = "border: 1px solid #E32526;background:#E32526;">Submit</button><a href="#" class="btn btn-primary"  data-toggle="modal" data-target="#exampleModal">Register</a>
+  <button type="submit" class="btn btn-primary mt-4 mb-4" style = "border: 1px solid #E32526;background:#E32526;">Submit</button><a href="#" class="ml-4 btn btn-primary"  data-toggle="modal" data-target="#exampleModal">Register</a>
 </form>
 </div>
     </div>
