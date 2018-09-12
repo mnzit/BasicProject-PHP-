@@ -25,7 +25,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
         <script>window.location.href="index.php"</script>
         <?php
         }else{
-        echo "What the hell were you thinking";
+         header("Location: login.php");
         }
 }
 ?>
