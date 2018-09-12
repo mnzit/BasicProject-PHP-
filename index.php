@@ -19,10 +19,18 @@ if(isset($_SESSION['type'])){
 <thead>
   <tr>
     <th>Flight no</th>
+     <?php
+    if(isset($_SESSION['type'])){
+      if($_SESSION['type'] == "admin"){?>
+    <th>Member no</th>
+      <?php
+      }
+      }?>
     <th>From</th>
     <th>To</th>
     <th>Date</th>
     <th>Actions</th>
+
   </tr>
 </thead>
 <tbody>
@@ -39,6 +47,13 @@ if(isset($_SESSION['type'])){
   while ($row = $q->fetch()): ?>
   <tr>
     <td><?php echo htmlspecialchars($row['flight_no']) ?></td>
+    <?php
+    if(isset($_SESSION['type'])){
+      if($_SESSION['type'] == "admin"){?>
+   <td><?php echo htmlspecialchars($row['member_no']) ?></td>
+      <?php
+      }
+      }?>
     <td><?php echo htmlspecialchars($row['tfrom']); ?></td>
     <td><?php echo htmlspecialchars($row['tto']); ?></td>
     <td><?php echo htmlspecialchars($row['date']); ?></td>
